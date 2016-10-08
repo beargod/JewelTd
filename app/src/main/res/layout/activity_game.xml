@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.jewelshow.GameActivity">
+    <SurfaceView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/surfaceView" />
+    <com.example.administrator.jewelshow.GameView
+        android:id="@+id/gameView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </com.example.administrator.jewelshow.GameView>
+    <Button
+        style="@style/put_button"
+        android:text="放置"
+        android:id="@+id/put_button"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        style="@style/put_button"
+        android:text="移除"
+        android:onClick="onClick"
+        android:id="@+id/remove_button"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/surfaceView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/boder2">
+        <TextView
+            style="@style/monster"
+            android:id="@+id/chapterNumber"/>
+        <TextView
+            style="@style/monster"
+            android:id="@+id/monsterNumber"/>
+        <TextView
+            style="@style/monster"
+            android:id="@+id/playerName"/>
+        <TextView
+            style="@style/monster"
+            android:id="@+id/playerLevel"/>
+        <TextView
+            style="@style/monster"
+            android:id="@+id/playerHp"/>
+        <TextView
+            style="@style/monster"
+            android:id="@+id/playerMoney"/>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/common_button"
+        android:text="设置"
+        android:id="@+id/setter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        style="@style/common_button"
+        android:id="@+id/showCompiste"
+        android:text="合成表"
+        android:layout_alignBottom="@+id/setter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        style="@style/toggle_button"
+        android:id="@+id/showWay"
+        android:textOff="显示路线"
+        android:textOn="隐藏路线"
+        android:layout_above="@+id/showCompiste"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <ToggleButton
+        style="@style/toggle_button"
+        android:textOff="开启加速"
+        android:textOn="关闭加速"
+        android:id="@+id/speedUp"
+        android:layout_above="@+id/showWay"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

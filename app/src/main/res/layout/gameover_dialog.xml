@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/boder2">
+    <TextView
+        android:id="@+id/finish_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:text="Game Over"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <Button
+            style="@style/common_button"
+            android:text="重新开始"
+            android:id="@+id/restart"
+            android:layout_marginRight="5dp"/>
+        <Button
+            style="@style/common_button"
+            android:text="退出游戏"
+            android:id="@+id/quit"/>
+    </LinearLayout>
+</LinearLayout>

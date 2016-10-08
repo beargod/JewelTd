@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".StartActivity"
+    android:background="#FFFFFF">
+
+    <Button
+        style="@style/common_button"
+        android:text="进入游戏"
+        android:id="@+id/button_start"
+        android:layout_above="@+id/button_exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:onClick="onClick"/>
+
+    <Button
+        style="@style/common_button"
+        android:text="退出游戏"
+        android:id="@+id/button_exit"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宝 石 T D"
+        android:id="@+id/textView"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/boder2">
+    <TextView
+        style="@style/monster"
+        android:id="@+id/chapterNumber"/>
+    <TextView
+        style="@style/monster"
+        android:id="@+id/playerName"/>
+    <TextView
+        style="@style/monster"
+        android:id="@+id/playerLevel"/>
+    <TextView
+        style="@style/monster"
+        android:id="@+id/playerHp"/>
+    <TextView
+        style="@style/monster"
+        android:id="@+id/playerMoney"/>
+
+</LinearLayout>

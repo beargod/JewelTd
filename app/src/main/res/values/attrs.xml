@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="backgroud" format="reference" />
+
+    <declare-styleable name="GameView">
+        <attr name="backgroud" />
+    </declare-styleable>
+    <declare-styleable name="Skills">
+        <attr name="skill_pic" format="reference"/>
+        <attr name="skill_name" format="string"/>
+        <attr name="skill_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="Comspite">
+
+    </declare-styleable>
+</resources>

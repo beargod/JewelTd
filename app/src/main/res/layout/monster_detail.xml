@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/boder2"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/monsterView"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="3dp"/>
+    <TextView
+        style="@style/monster"
+        android:id="@+id/monsterName"
+        />
+    <TextView
+        style="@style/monster"
+        android:id="@+id/hp"
+        />
+    <TextView
+        style="@style/monster"
+        android:id="@+id/armor"/>
+    <TextView
+        style="@style/monster"
+        android:id="@+id/mk" />
+    <TextView
+        style="@style/monster"
+        android:id="@+id/speed" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/skills"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/operations"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ToggleButton
+            style="@style/button"
+            android:id="@+id/first_attck"
+            android:textOn="设置优先攻击"
+            android:checked="true"
+            android:textOff="取消优先攻击"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/debuffs"
+        android:orientation="horizontal">
+    </LinearLayout>
+</LinearLayout>
